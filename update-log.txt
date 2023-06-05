@@ -1,0 +1,2 @@
+1. Whenever you go to one of the regular pages like discord, settings, or apps, they all say 404 not found 
+   even though it exist's in the routes.

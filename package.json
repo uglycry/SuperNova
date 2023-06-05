@@ -1,0 +1,26 @@
+{
+  "name": "algebra",
+  "version": "5.0.0",
+  "description": "In elementary algebra, completing the square is a technique for converting a quadratic polynomial of the form to the form for some values of h and k. -https://discord.gg/wrC3W9y83Y",
+  "type": "module",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "proxy"
+  ],
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@tomphttp/bare-server-node": "^1.2.6",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.4"
+  }
+}
