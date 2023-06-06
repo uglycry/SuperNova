@@ -38,8 +38,13 @@ app.get("/topics/moon/", (req, res) => {
   });
 
   app.get("/discord", (req, res) => {
-    res.sendFile(path.join(__dirname, "routes", "settings.html"));
+    res.sendFile(path.join(__dirname, "routes", "discord.html"));
   });
+
+  app.get("/apps", (req, res) => {
+    res.sendFile(path.join(__dirname, "routes", "apps.html"));
+  });
+
 
   app.get("/tabs", (req, res) => {
     res.sendFile(path.join(__dirname, "routes", "tabs.html"));
