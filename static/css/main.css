@@ -120,14 +120,25 @@ body {
 }
 
 .searchbar {
-  padding: 20px;
-  width: 550px;
+  padding: 12px;
+  width: 503px;
   border-radius: 41px;
   background: #1f1e1ea8;
   text-align: center;
   font-size: 24px;
   color: white;
   border: 3px solid #63616124;
+}
+
+.math {
+  position: absolute;
+  top: 251px;
+	font-size: 50px;
+	color: white;
+	font-family: "Inter", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 0px 0px 5px 5px;
 }
 
 .mainInner {
