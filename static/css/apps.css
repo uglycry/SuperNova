@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 
+body {
+    overflow: visible !important;
+}
+
 .container-apps {
-    margin-top: 210px;
+    margin-top: 39px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -30,9 +34,8 @@
     position: absolute;
     width: 145px;
     height: 19px;
-    font-family: 'Inter';
     font-style: normal;
-    font-weight: 800;
+    font-weight: 550;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -40,6 +43,7 @@
     text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
     margin-top: 150px;
     transition: all 0.2s ease;
+    text-transform: none !important;
 }
 
 .column:hover,

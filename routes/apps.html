@@ -17,6 +17,8 @@
   <script src="/scripts/NHA.js"></script>
   <script src="/science-astronomy/uv.bundle.js"></script>
   <script src="/science-astronomy/uv.bundle.js"></script>
+  <script src="/scripts/go.js"></script>
+  <script src="/scripts/index.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
 	new Crate({
@@ -67,7 +69,7 @@
 
 	</header>
 
-	<div style="z-index: 99;" id="sidebarMenu">
+	<div style="z-index: 99; margin-top: -119px !important; background-color: #111111ed !important;" id="sidebarMenu">
 		<ul style="height: 675px; overflow: auto;"  class="sidebarMenuInner">
 
 		<li class="buttons" onclick="window.location.href = './settings';">
@@ -107,45 +109,103 @@
 
 	<!-- Middle page -->
 
+	<div style="display: flex; justify-content: center; margin-top: 124px;">
+		<input class="searchbar" id="searchbar" name="search" placeholder="Search.." tag="searchbar" type="text">	
+	</div>
+
 	<div class="container-apps">
-        <div class="column">
-            <a href="https://discord.com/app">
-            <img style="box-shadow: 0px 0px 10px rgb(129 139 247);" width="145" height="145" src="https://interstellar-v5.pages.dev/resources/images/discord.jpg">
-            <p>Discord</p>
-            </a>
-        </div>    
-        <div class="column">
-            <a href="https://Youtube.com">
-            <img style="box-shadow: 0px 0px 10px rgb(255, 255, 255);" width="145" height="145" src="https://interstellar-v5.pages.dev/resources/images/youtube.png">
-            <p>YouTube</p>
-            </a>
-        </div>    
+
+		<!-- Divider -->
+
+		<div class="column">
+			<a onclick="go('https://search.brave.com')">
+			  <img width="145" height="145" src="/images/icons/brave.webp">
+			  <p>Brave</p>
+			</a>
+		  </div>
+		  <div class="column">
+			<a onclick="go('https://chatgptproxy.me')">
+			  <img width="145" height="145" src="/images/icons/chatgpt.png">
+			  <p>Chat GPT Clone</p>
+			</a>
+		  </div>
+		  <div class="column">
+			<a onclick="go('https://discord.com')">
+			  <img width="145" height="145" src="/images/icons/discord.jpg">
+			  <p>Discord</p>
+			</a>
+		  </div>
+		  <div class="column">
+			<a onclick="go('https://play.geforcenow.com')">
+			  <img width="145" height="145" src="/images/icons/gfn.png">
+			  <p>Geforce NOW</p>
+			</a>
+		  </div>
+		  <div class="column">
+			<a onclick="go('https://github.com')">
+			  <img width="145" height="145" src="/images/icons/github.png">
+			  <p>Github</p>
+			</a>
+		  </div>
+		  <div class="column">
+			<a onclick="go('https://google.com')">
+			  <img width="145" height="145" src="/images/icons/google.webp">
+			  <p>Google</p>
+			</a>
+		  </div>
+		  <div class="column">
+			<a onclick="go('https://tiktok.com')">
+			  <img width="145" height="145" src="/images/icons/tiktok.png">
+			  <p>Tiktok</p>
+			</a>
+		  </div>
+		  <div class="column">
+			<a onclick="go('https://twitch.tv')">
+			  <img width="145" height="145" src="/images/icons/twitch.png">
+			  <p>Twitch</p>
+			</a>
+		  </div>
+		  <div class="column">
+			<a onclick="go('https://youtube.com')">
+			  <img width="145" height="145" src="/images/icons/youtube.png">
+			  <p>YouTube</p>
+			</a>
+		  </div>
+		  <div class="column">
+			<a onclick="go('https://snapchat.com')">
+			  <img width="145" height="145" src="https://github.com/DevDevil-RBLX/mathematics/blob/main/static/assets/images/icons/apps/snapchat.png?raw=true">
+			  <p>SnapChat</p>
+			</a>
+		  </div>
+		  <div class="column">
+			<a onclick="go('https://soundcloud.com')">
+			  <img width="145" height="145" src="https://github.com/DevDevil-RBLX/mathematics/blob/main/static/assets/images/icons/apps/soundcloud.jpg?raw=true">
+			  <p>SoundCloud</p>
+			</a>
+		  </div>
+		  <div class="column">
+			<a onclick="go('https://reddit.com')">
+			  <img width="145" height="145" src="https://github.com/DevDevil-RBLX/mathematics/blob/main/static/assets/images/icons/apps/reddit.png?raw=true">
+			  <p>Reddit</p>
+			</a>
+		  </div>
+		  <div class="column">
+			<a onclick="go('https://tumblr.com')">
+			  <img style="background-color: #001935;" width="145" height="145" src="https://github.com/DevDevil-RBLX/mathematics/blob/main/static/assets/images/icons/apps/tumblr.png?raw=true">
+			  <p>Tumblr</p>
+			</a>
+		  </div>
+		  <div class="column">
+			<a onclick="go('https://pixlr.com')">
+			  <img width="145" height="145" src="https://github.com/DevDevil-RBLX/mathematics/blob/main/static/assets/images/icons/pix.png?raw=true">
+			  <p>Pixlr</p>
+			</a>
+		  </div>
+		<!-- Divider end -->
     </div>
 
 	<!-- Middle page end -->
-	
-	<ul class="wrapper">
-		<li class="icon facebook">
-		  <span class="tooltip">Facebook</span>
-		  <span><i class="fab fa-facebook-f"></i></span>
-		</li>
-		<li class="icon twitter">
-		  <span class="tooltip">Twitter</span>
-		  <span><i class="fab fa-twitter"></i></span>
-		</li>
-		<li class="icon instagram">
-		  <span class="tooltip">Instagram</span>
-		  <span><i class="fab fa-instagram"></i></span>
-		</li>
-		<li class="icon github">
-		  <span class="tooltip">Github</span>
-		  <span><i class="fab fa-github"></i></span>
-		</li>
-		<li class="icon youtube">
-		  <span class="tooltip">Youtube</span>
-		  <span><i class="fab fa-youtube"></i></span>
-		</li>
-	  </ul>
+
 
 	<!-- Partial -->
 
