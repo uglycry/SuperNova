@@ -131,8 +131,7 @@ body {
 }
 
 .math {
-  position: absolute;
-  top: 251px;
+  padding: 11px;
 	font-size: 50px;
 	color: white;
 	font-family: "Inter", sans-serif;

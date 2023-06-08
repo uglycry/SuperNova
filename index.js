@@ -45,6 +45,10 @@ app.get("/topics/moon/", (req, res) => {
     res.sendFile(path.join(__dirname, "routes", "apps.html"));
   });
 
+  app.get("/funny", (req, res) => {
+    res.sendFile(path.join(__dirname, "routes", "funny.html"));
+  });
+
 
   app.get("/tabs", (req, res) => {
     res.sendFile(path.join(__dirname, "routes", "tabs.html"));
