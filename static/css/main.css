@@ -356,7 +356,7 @@ a {
 
 .logo {
   margin: 0;
-  float: right;
+  /*float: left;*/
   color: black;
   text-align: center;
   padding: 12px;
