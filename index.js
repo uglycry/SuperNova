@@ -29,12 +29,12 @@ app.use(express.static(path.join(__dirname, "static")));
     res.sendFile(path.join(__dirname, "routes", "settings.html"));
   });
 
-  app.get("/discord", (req, res) => {
-    res.sendFile(path.join(__dirname, "routes", "discord.html"));
+  app.get("/socialstudys", (req, res) => {
+    res.sendFile(path.join(__dirname, "routes", "socialstudys.html"));
   });
 
-  app.get("/apps", (req, res) => {
-    res.sendFile(path.join(__dirname, "routes", "apps.html"));
+  app.get("/algebra", (req, res) => {
+    res.sendFile(path.join(__dirname, "routes", "algebra.html"));
   });
 
   app.get("/go", (req, res) => {
