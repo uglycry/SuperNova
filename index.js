@@ -21,16 +21,8 @@ app.use(
 
 app.use(express.static(path.join(__dirname, "static")));
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "routes", "index.html"));
-});
-
-app.get("/news", (req, res) => {
-  res.sendFile(path.join(__dirname, "routes", "news.html"));
-});
-
-app.get("/topics/moon/", (req, res) => {
-    res.sendFile(path.join(__dirname, "routes", "moon.html"));
+  app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "routes", "index.html"));
   });
 
   app.get("/settings", (req, res) => {
@@ -45,29 +37,17 @@ app.get("/topics/moon/", (req, res) => {
     res.sendFile(path.join(__dirname, "routes", "apps.html"));
   });
 
-  app.get("/tabs", (req, res) => {
-    res.sendFile(path.join(__dirname, "routes", "tabs.html"));
-  });
-
-  app.get("/tabinner", (req, res) => {
-    res.sendFile(path.join(__dirname, "routes", "tabinner.html"));
-  });
-
   app.get("/go", (req, res) => {
     res.sendFile(path.join(__dirname, "routes", "go.html"));
   });
 
-  app.get("/loading", (req, res) => {
-    res.sendFile(path.join(__dirname, "routes", "loading.html"));
+  app.get("/404", (req, res) => {
+    res.sendFile(path.join(__dirname, "routes", "404.html"));
   });
 
-app.get("/404", (req, res) => {
-  res.sendFile(path.join(__dirname, "routes", "404.html"));
-});
-
-app.get("/*", (req, res) => {
-  res.redirect("/404");
-});
+  app.get("/*", (req, res) => {
+    res.redirect("/404");
+  });
 
 // Bare Server 
 server.on("request", (req, res) => {
