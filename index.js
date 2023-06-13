@@ -21,6 +21,10 @@ app.use(
 
 app.use(express.static(path.join(__dirname, "static")));
 
+  app.get("/math", (req, res) => {
+    res.sendFile(path.join(__dirname, "cloak", "index.html"));
+  });
+
   app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "routes", "index.html"));
   });
