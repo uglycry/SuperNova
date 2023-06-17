@@ -3,6 +3,7 @@ window.addEventListener("load", () => {
     scope: "/astronomy/"
   });
 });
+
 function isUrl(val = "") {
   if (
     /^http(s?):\/\//.test(val) ||
@@ -11,10 +12,14 @@ function isUrl(val = "") {
     return true;
   return false;
 }
+function hasHttpPrefix(val = "") {
+  if (/^http(s?):\/\//.test(val)) return true;
+  return false;
+}
+
 
 const form = document.querySelector("form");
 const input = document.querySelector("input");
-
 
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -24,8 +29,13 @@ form.addEventListener("submit", async (event) => {
       sessionStorage.setItem("encodedUrl", encodeURIComponent(url));
       location.href = "/./go";  
     } else {
-      sessionStorage.setItem("encodedUrl", encodeURIComponent(formValue));
-      location.href = "/./go";
+      if (!hasHttpPrefix(formValue)) {
+        const url = "https://" + formValue;
+        sessionStorage.setItem("encodedUrl", encodeURIComponent(url));
+        location.href = "/./go";
+      } else {
+        sessionStorage.setItem("encodedUrl", encodeURIComponent(formValue));
+        location.href = "/./go";
+      }
     }
   });
-
