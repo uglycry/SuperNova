@@ -1,5 +1,5 @@
 self.__dynamic$config = {
-  prefix: '/astronomy/',
+  prefix: '/mathematics/',
   encoding: 'plain',
   mode: 'production', // development: zero caching, no minification, production: speed-oriented
   rewrite: {

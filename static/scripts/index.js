@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
   navigator.serviceWorker.register("../sw.js", {
-    scope: "/astronomy/"
+    scope: "/mathematics/"
   });
 });
 
