@@ -9,7 +9,7 @@ self.__dynamic$config = {
   },
   bare: {
     version: 2,
-    path: '/outerspace/',
+    path: '/geometry/',
   },
   tab: {
     title: 'Service',

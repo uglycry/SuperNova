@@ -8,7 +8,7 @@ dotenv.config();
 const __dirname = process.cwd();
 const server = http.createServer();
 const app = express(server);
-const bareServer = createBareServer("/outerspace/");
+const bareServer = createBareServer("/geometry/");
 
 app.use(express.json());
 app.use(
