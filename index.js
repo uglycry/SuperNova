@@ -25,6 +25,10 @@ app.use(express.static(path.join(__dirname, "static")));
     res.sendFile(path.join(__dirname, "routes", "cloaks", "howtobelogical.html"));
   });
 
+  app.get("/vocab", (req, res) => {
+    res.sendFile(path.join(__dirname, "routes", "cloaks", "vocabulary.html"));
+  });
+
   app.get("/math", (req, res) => {
     res.sendFile(path.join(__dirname, "routes", "cloaks", "mathisfun.html"));
   });
