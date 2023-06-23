@@ -4,6 +4,7 @@
 <p>Step 1: '$ git clone https://github.com/DevDevil-RBLX/SuperNova-DY.git'</p>
 <p>Step 2: '$ npm install'</p>
 <p>Step 3: '$ npm start'</p>
+<p>You're finished! Server runs at localhost:8080</p>
 
 # Deploying
 
