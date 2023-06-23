@@ -1,6 +1,6 @@
 self.__dynamic$config = {
   prefix: '/mathematics/',
-  encoding: 'plain',
+  encoding: 'xor',
   mode: 'production', // development: zero caching, no minification, production: speed-oriented
   rewrite: {
     css: 'regex',
