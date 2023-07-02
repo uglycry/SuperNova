@@ -49,3 +49,6 @@ npm start
 
 SuperNova is still fairly new to this universe, and we would love to have your support to grow our small but growing community!
 
+## Credits
+
+
