@@ -8,7 +8,7 @@ SuperNova is a very fast proxy using **dynamic** If you would like to deploy and
 
 [Features](#features) •
 [Deployment](#deployment) •
-[Contributing](./CONTRIBUTING.md)
+[Contributing](#contributing)
 
 ![SuperNova](https://cdn.discordapp.com/attachments/1121017255208165453/1124178634144485436/image.png)
 
@@ -25,7 +25,7 @@ SuperNova is a very fast proxy using **dynamic** If you would like to deploy and
 
 SuperNova comes with shortcuts to quickly hide your 'work' by replacing it with a math or science website!
 
-- `Ctrl + E` - Switch to a random cloak of ours that are convincing!
+- `Alt + C` - Switch to a random cloak of ours that are convincing!
 
 ## Deployment
 
@@ -48,4 +48,7 @@ npm start
 ## Contributing
 
 SuperNova is still fairly new to this universe, and we would love to have your support to grow our small but growing community!
+
+## Credits
+
 
