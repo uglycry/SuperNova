@@ -25,7 +25,7 @@ SuperNova is a very fast proxy using **dynamic** If you would like to deploy and
 
 SuperNova comes with shortcuts to quickly hide your 'work' by replacing it with a math or science website!
 
-- `Alt + E` - Switch to a random cloak of ours that are convincing!
+- `Alt + C` - Switch to a random cloak of ours that are convincing!
 
 ## Deployment
 
