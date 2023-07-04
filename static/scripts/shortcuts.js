@@ -28,6 +28,19 @@ document.addEventListener('keydown', function (event) {
     'https://www.mathgoodies.com'
   ];
   
+  var scienceWebsites = [
+    'https://www.nasa.gov',
+    'https://www.nationalgeographic.com',
+    'https://www.scientificamerican.com',
+    'https://www.bbc.co.uk/science',
+    'https://www.sciencenews.org',
+    'https://www.popsci.com',
+    'https://www.smithsonianmag.com/science-nature',
+    'https://www.livescience.com',
+    'https://www.discovery.com',
+    'https://www.sciencemag.org'
+  ];
+  
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("../sw.js", {
       scope: "/service/"
@@ -35,9 +48,14 @@ document.addEventListener('keydown', function (event) {
   });
   
   document.addEventListener('keydown', function(event) {
-    if (event.altKey && event.key === 'm') {
-      var randomIndex = Math.floor(Math.random() * mathWebsites.length);
-      go(mathWebsites[randomIndex]);
+    if (event.altKey) {
+      if (event.key === 'm') {
+        var randomIndex = Math.floor(Math.random() * mathWebsites.length);
+        go(mathWebsites[randomIndex]);
+      } else if (event.key === 's') {
+        var randomIndex = Math.floor(Math.random() * scienceWebsites.length);
+        go(scienceWebsites[randomIndex]);
+      }
     }
   });
   
@@ -55,4 +73,5 @@ document.addEventListener('keydown', function (event) {
       return true;
     return false;
   }
+  
   
