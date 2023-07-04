@@ -13,8 +13,6 @@ document.addEventListener('keydown', function (event) {
     }
   });
 
-  // math cloaks 'alt + m'
-
   var mathWebsites = [
     'https://www.khanacademy.org',
     'https://www.mathplayground.com',
@@ -73,5 +71,4 @@ document.addEventListener('keydown', function (event) {
       return true;
     return false;
   }
-  
   
