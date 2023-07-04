@@ -39,6 +39,19 @@ document.addEventListener('keydown', function (event) {
     'https://www.sciencemag.org'
   ];
   
+  var englishWebsites = [
+    'https://www.dictionary.com',
+    'https://www.grammarly.com',
+    'https://www.merriam-webster.com',
+    'https://www.englishclub.com',
+    'https://www.bbc.co.uk/learningenglish',
+    'https://www.readwritethink.org',
+    'https://www.eslgold.com',
+    'https://www.learnenglish.de',
+    'https://www.macmillandictionary.com',
+    'https://www.engvid.com'
+  ];
+  
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("../sw.js", {
       scope: "/service/"
@@ -53,7 +66,11 @@ document.addEventListener('keydown', function (event) {
       } else if (event.key === 's') {
         var randomIndex = Math.floor(Math.random() * scienceWebsites.length);
         go(scienceWebsites[randomIndex]);
+      } else if (event.key === 'e') {
+        var randomIndex = Math.floor(Math.random() * englishWebsites.length);
+        go(englishWebsites[randomIndex]);
       }
+      event.preventDefault(); // Prevent default browser shortcuts
     }
   });
   
@@ -71,4 +88,5 @@ document.addEventListener('keydown', function (event) {
       return true;
     return false;
   }
+  
   
