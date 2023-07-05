@@ -29,6 +29,8 @@ SuperNova comes with shortcuts to quickly hide your 'work' by replacing it with 
 - `Alt + S` - Opens a science cloak in our proxy
 - `Alt + E` - Opens an English cloak in our proxy
 
+- PS- There's like 100+ links for those shortcuts.
+
 ## Deployment
 
 ### Quick Deployment Options
