@@ -151,7 +151,7 @@ body {
   font-size: 24px;
   color: white;
   border: 3px solid #63616124;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .searchbar:focus {
@@ -605,7 +605,7 @@ canvas {
   cursor: pointer;
   background-color: red;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 6px;
   width: 46px;
   height: 49px;
   font-family: sans-serif;

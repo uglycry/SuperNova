@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     resizeCanvas();
   
     let stars = [];
-    const numStars = 1000;
+    const numStars = 500;
     const speed = .002;
   
     class Star {
