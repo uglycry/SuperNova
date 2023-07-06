@@ -43,7 +43,7 @@ SuperNova will not be the one to put a blame on if you deploy our project to rep
 - [NodeJS version >=18](https://nodejs.org/)
 
 ```bash
-git clone https://github.com/DevDevil-RBLX/SuperNova-DY.git
+git clone https://github.com/SuperNova-Network/SuperNova-DY.git
 cd SuperNova-DY
 npm install
 npm start
