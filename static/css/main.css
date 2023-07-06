@@ -553,19 +553,20 @@ canvas {
 
 /* Popup styles */
 .popup {
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   position: fixed;
-  top: 50%;
+  top: 134%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #141414;
+  background-color: #1a1a1aed;
   padding: 20px;
   text-align: center;
   height: 462px;
   width: 866px;
   border-radius: 20px;
-  box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 24px 0px rgb(82 82 82 / 66%);
   backdrop-filter: blur(10px);
+  z-index: 100000000000000000000000;
 }
 
 .popup h2 {
@@ -596,19 +597,20 @@ canvas {
 }
 
 .popup-close {
+  box-shadow: 0px 0px 11px 0px rgb(255 0 0 / 66%);
   transition: 0.3s;
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 12px;
   color: white;
   font-weight: bold;
   font-size: 32px;
   cursor: pointer;
-  background-color: red;
-  padding: 10px;
+  background-color: #ff1919;
+  padding: 4px;
   border-radius: 6px;
-  width: 46px;
-  height: 49px;
+  width: 58px;
+  height: 41px;
   font-family: sans-serif;
 }
 
