@@ -553,7 +553,7 @@ canvas {
 
 /* Popup styles */
 .popup {
-  transition: 0.3s;
+  transition: all 0.2s ease;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -592,6 +592,7 @@ canvas {
 
 .popup-a:hover {
   color: #9b0606;
+  transform: scale(1,1);
 }
 
 .popup-close {
@@ -613,4 +614,5 @@ canvas {
 
 .popup-close:hover {
   background-color: #9b0606;
+  color: #b1adad;
 }
