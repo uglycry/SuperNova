@@ -20,6 +20,7 @@ SuperNova is a very fast proxy using **dynamic** If you would like to deploy and
 - Games
 - Proxy
 - Cloaks
+- Cheats
 
 ### Shortcuts
 
