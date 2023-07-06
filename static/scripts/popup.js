@@ -20,7 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var storageKey = "popupClosed";
   
     closeButton.addEventListener("click", function() {
-      popup.style.display = "none";
+
+      popup.style = "top: 134%;";
+      
+
+
       localStorage.setItem(storageKey, "true");
     });
   
@@ -29,3 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
       popup.style.display = "none";
     }
   });
+
+  setTimeout(() => {
+    var popup = document.getElementsByClassName("popup")[0];  
+    popup.style.top = "50%";
+  }, "2000");
