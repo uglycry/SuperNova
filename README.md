@@ -10,7 +10,7 @@ SuperNova is a very fast proxy using **dynamic** If you would like to deploy and
 [Deployment](#deployment) •
 [Contributing](#contributing)
 
-![SuperNova](https://cdn.discordapp.com/attachments/1123937882168623135/1126303860772847746/image.png)
+![SuperNova](https://media.discordapp.net/attachments/1123937882168623135/1126330153719574528/image.png?width=1440&height=627)
 
 </div>
 
