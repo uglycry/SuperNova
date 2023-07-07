@@ -98,10 +98,8 @@ span {
 }
 
 body {
-  background: #111;
   color: white;
   margin: 0;
-  --bg-c: #111;
   font-family: sans-serif;
   overflow: hidden;
 }
