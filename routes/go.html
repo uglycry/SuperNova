@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="/css/popup2.css">
     <script src="/scripts/shortcuts.js"></script>
     <script src="/scripts/dragable.js"></script>
+    <script src="/scripts/popup2.js"></script>
     <style>
       body {
         margin: 0;
@@ -74,11 +75,10 @@ window.addEventListener('mouseup', onMouseUp); // Use window instead of document
   <body>
     <iframe src="" id="iframeId" style="bottom: 0" style="border: 0px #ffffff none" name="Iframe" scrolling="yes" frameborder="0" marginheight="0px" marginwidth="0px" height="100%" width="100%" allowfullscreen></iframe>
 
-    <div class="popup"> <!-- Settings -->
-      <span class="popup-close">X</span>
-      <h2>Have any questions?</h2>
-      <p>Please check out our GitHub for the wiki and instructions in the README document. </br> </br> Another way to get in contact for more detailed questions or site problems is to join our Discord and contact our staff or create a ticket. </br> <a style="top: 241px;left: 179px;position: absolute;" href="https://dsc.gg/supernovaproxy" class="popup-a" target="_blank">https://dsc.gg/supernovaproxy</a> </br> </br> In case you have forgotten about our GitHub, here is the link:</p> <a style="font-size: 26px !important;" href="https://github.com/SuperNova-Network/SuperNova-DY" class="popup-a" target="_blank">https://github.com/SuperNova-Network/SuperNova-DY</a>
-      </div>
+    <div class="popup2" id="settingsPopup"> <!-- Settings -->
+      <span class="popup-close2">X</span>
+      <h2>Settings</h2>
+    </div>
 
     <script>
       window.onload = function() {
