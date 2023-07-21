@@ -7,6 +7,7 @@ const clickSound = document.getElementById("clickSound");
 // Function to play the sound
 function playSound() {
   clickSound.play();
+  console.log("cheese")
   // Save the checkbox state in local storage
   localStorage.setItem("checkboxState", checkbox.checked);
 }
