@@ -8,10 +8,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const particlesCanvas = document.getElementById("canvas");
 
 
-
   // Function to play the sound
   function playSound() {
-    console.log("play");
+    
+
+  toastr.options = {
+    "closeButton": false,
+    "debug": false,
+    "newestOnTop": false,
+    "progressBar": true,
+    "positionClass": "toast-bottom-left",
+    "preventDuplicates": false,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "1000",
+    "timeOut": "5000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut"
+  }
+
+
+toastr["success"]("Your changes have been saved.", "Sucess!")
     clickSound.play();
     // Save the checkbox state in local storage
     localStorage.setItem("checkboxState", checkbox.checked);
@@ -19,7 +39,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // ( Delete canvas and particles.js when enabled, re add those elements when disabled code here ) \\
 
   }
-
 
 
   // Function to load the checkbox state from local storage
@@ -36,5 +55,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   loadCheckboxState();
 })
-
-
