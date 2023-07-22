@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"/>
  	
   <!-- JS -->
+  <script src="/scripts/backgroundimage.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
   <script src="/scripts/setting-columns/particle.js"></script>
@@ -81,9 +82,9 @@
 			<!------------------------>
 			<div class="setting-column">
 				<h2>Particles</h2>
-				<p>This setting deduces lag for users with slow computers</p>
+				<p style="font-size: 26px;">This setting reduces lag for users with slow computers by deleting the particle effects.</p>
 		
-				<div class="container">
+				<div style="margin-top: 7px !important;" class="container">
 					<label class="switch" for="checkbox">
 					  <input type="checkbox" id="checkbox" />
 					  <div class="slider round"></div>
@@ -99,10 +100,10 @@
 			<!------------------------>
 			<div class="setting-column">
 				<h2>Cloaking</h2>
-				<p>Enabling this setting opens the website in 'about:blank'</p>
+				<p style="font-size: 27px;">Enabling this setting opens the website in 'about:blank' replacing your url.</p>
 		
-				<div class="container">
-					<label class="switch" for="checkbox">
+				<div style="margin-top: 29px !important;" class="container">
+					<label class="switch" f	or="checkbox">
 					  <input type="checkbox" id="checkbox" />
 					  <div class="slider round"></div>
 					</label>
@@ -113,6 +114,16 @@
 
 					  Your browser does not support the audio element.
 					</audio>
+			    </div>
+			<!------------------------>
+			<div class="setting-column">
+				<h2>Custom backgrounds</h2>
+				<p style="font-size: 26px;" >Copy any image url as the background</p>
+
+				<input style="width: 250px;text-align: center;background-color: #e1e1e1;border-radius: 10px;padding: 10px;margin-top: 10px;font-size: 15px;" type="text" id="imageUrl" placeholder="Type or drag an image">
+				<button style="padding: 10px;border-radius: 7px;background-color: #e1e1e1; margin-top:10px;" onclick="changeBackground()">Submit</button>
+				<button style="padding: 10px;border-radius: 7px;background-color: #e1e1e1; margin-top:10px;" onclick="resetBackground()">Reset</button>
+
 			    </div>
 			<!------------------------>
 		</div>

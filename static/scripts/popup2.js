@@ -1,22 +1,35 @@
+// Keep track of the popup state
+let isPopupOpen = false;
+
 document.addEventListener('keydown', function(event) {
-    // Check if Alt and ; (semicolon) keys are pressed
-    if (event.altKey && event.key === ';') {
-      // Get the popup element
-      const popup = document.getElementById('settingsPopup');
-      
-      // Set the top to '50%' when Alt + ; is pressed
+  // Check if Alt and ; (semicolon) keys are pressed
+  if (event.altKey && event.key === ';') {
+    // Get the popup element
+    const popup = document.getElementById('settingsPopup');
+
+    if (isPopupOpen) {
+      // Close the popup by setting the top to '134%'
+      popup.style.top = '134%';
+    } else {
+      // Open the popup by setting the top to '50%'
       popup.style.top = '50%';
     }
-  });
-  
-  document.addEventListener('click', function(event) {
-    // Check if the click is on the 'popup-close2' element
-    if (event.target.classList.contains('popup-close2')) {
-      // Get the popup element
-      const popup = document.getElementById('settingsPopup');
-      
-      // Set the top to '134%' when 'popup-close2' is clicked
-      popup.style.top = '134%';
-    }
-  });
-  
+
+    // Toggle the popup state
+    isPopupOpen = !isPopupOpen;
+  }
+});
+
+document.addEventListener('click', function(event) {
+  // Check if the click is on the 'popup-close2' element
+  if (event.target.classList.contains('popup-close2')) {
+    // Get the popup element
+    const popup = document.getElementById('settingsPopup');
+
+    // Set the top to '134%' when 'popup-close2' is clicked
+    popup.style.top = '134%';
+
+    // Set the popup state to closed
+    isPopupOpen = false;
+  }
+});
