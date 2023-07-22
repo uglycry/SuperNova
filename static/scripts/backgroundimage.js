@@ -1,26 +1,31 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var saveButton = document.getElementById("save-button");
-  saveButton.addEventListener("click", function() {
-    var backgroundInput = document.getElementById("background-input");
-    var imageURL = backgroundInput.value;
+const imageUrlInput = document.getElementById("imageUrl");
+let canvasElement = document.getElementById("canvas");
 
-    if (imageURL !== "") {
-      localStorage.setItem("backgroundImage", imageURL);
-      document.body.style.backgroundImage = "url('" + imageURL + "')";
-      backgroundInput.value = "";
-    } else {
-
-    }
-  });
-
-  var resetButton = document.getElementById("reset-button");
-  resetButton.addEventListener("click", function() {
-    localStorage.removeItem("backgroundImage");
-    document.body.style.backgroundImage = "url('default-background.jpg')";
-  });
-
-  var savedBackgroundImage = localStorage.getItem("backgroundImage");
-  if (savedBackgroundImage) {
-    document.body.style.backgroundImage = "url('" + savedBackgroundImage + "')";
+function changeBackground() {
+  const imageUrl = imageUrlInput.value;
+  if (!imageUrl) {
+    alert("Please enter a valid image URL.");
+    return;
   }
-});
+
+  // Remove the canvas from the DOM
+  if (canvasElement) {
+    canvasElement.parentNode.removeChild(canvasElement);
+    canvasElement = null;
+  }
+
+  document.body.style.backgroundColor = "transparent";
+  document.body.style.backgroundImage = `url('${imageUrl}')`;
+}
+
+function resetBackground() {
+  // Check if the canvas element exists, and if not, create it and add it back to the DOM
+  if (!canvasElement) {
+    canvasElement = document.createElement("div");
+    canvasElement.id = "canvas";
+    document.body.appendChild(canvasElement);
+  }
+
+  document.body.style.backgroundColor = "#e0e0e0";
+  document.body.style.backgroundImage = "none";
+}
