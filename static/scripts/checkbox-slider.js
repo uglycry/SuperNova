@@ -1,29 +1,40 @@
-// Get the checkbox element
-const checkbox = document.getElementById("checkbox");
+document.addEventListener('DOMContentLoaded', (event) => {
+  console.log('dom loaded');
 
-// Get the audio element
-const clickSound = document.getElementById("clickSound");
 
-// Function to play the sound
-function playSound() {
-  clickSound.play();
-  console.log("cheese")
-  // Save the checkbox state in local storage
-  localStorage.setItem("checkboxState", checkbox.checked);
-}
+  // Functions
+  const checkbox = document.getElementById("checkbox");
+  const clickSound = document.getElementById("clickSound");
+  const particlesCanvas = document.getElementById("canvas");
 
-// Function to load the checkbox state from local storage
-function loadCheckboxState() {
-  const savedState = localStorage.getItem("checkboxState");
-  if (savedState === "true") {
-    checkbox.checked = true;
-  } else if (savedState === "false") {
-    checkbox.checked = false;
+
+
+  // Function to play the sound
+  function playSound() {
+    console.log("play");
+    clickSound.play();
+    // Save the checkbox state in local storage
+    localStorage.setItem("checkboxState", checkbox.checked);
+
+    // ( Delete canvas and particles.js when enabled, re add those elements when disabled code here ) \\
+
   }
-}
 
-// Attach the 'playSound' function to the 'click' event of the checkbox
-checkbox.addEventListener("click", playSound);
 
-// Load the checkbox state when the page loads
-loadCheckboxState();
+
+  // Function to load the checkbox state from local storage
+  function loadCheckboxState() {
+    const savedState = localStorage.getItem("checkboxState");
+    if (savedState === "true") {
+      checkbox.checked = true;
+    } else if (savedState === "false") {
+      checkbox.checked = false;
+    }
+  }
+
+  checkbox.addEventListener("click", playSound);
+
+  loadCheckboxState();
+})
+
+
