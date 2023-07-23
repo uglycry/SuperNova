@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
     function draw() {
       ctx.fillStyle = '#111';
-      //console.log('document.getElementById("COLORS1").style.backgroundColor')
       ctx.fillRect(0, 0, canvas.width, canvas.height);
   
       for (const star of stars) {
