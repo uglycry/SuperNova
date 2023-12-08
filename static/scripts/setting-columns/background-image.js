@@ -47,7 +47,8 @@ function changeBackground() {
 
 function resetBackground() {
 	toastr.success("Your changes have been saved.", "Success!");
-	document.body.style.backgroundImage = "url('/images/Earth-From-Space-HD-Backgrounds.jpg')";
+	document.body.style.backgroundColor = "#111";
+	document.body.style.backgroundImage = "";
 	localStorage.removeItem("backgroundImage");
 	document.getElementById("imageUrl").value = "";
 }
