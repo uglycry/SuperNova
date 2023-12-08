@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function changeBackground() {
+	document.getElementById("canvas").style.display = "none";
 	const imageUrl = document.getElementById("imageUrl").value.trim();
 	if (imageUrl === "") {
 		toastr.error("Please enter an image URL.", "Error");
@@ -46,9 +47,10 @@ function changeBackground() {
 }
 
 function resetBackground() {
-	toastr.success("Your changes have been saved.", "Success!");
+	toastr.success("Your changes have been saved.", "Background has been reset!");
 	document.body.style.backgroundColor = "#111";
 	document.body.style.backgroundImage = "";
+	document.getElementById("canvas").style.display = "block";
 	localStorage.removeItem("backgroundImage");
 	document.getElementById("imageUrl").value = "";
 }

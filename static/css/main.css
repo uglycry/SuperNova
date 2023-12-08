@@ -543,6 +543,7 @@ li > i {
 }
 
 canvas {
+  display: block;
   z-index: -999999;
   position: absolute;
   top: 0;
