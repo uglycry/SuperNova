@@ -21,13 +21,14 @@ document.addEventListener('keydown', function(event) {
 });
 
 document.addEventListener('click', function(event) {
-  // Check if the click is on the 'popup-close2' element
+  console.log('clicked X')
   if (event.target.classList.contains('popup-close2')) {
-    // Get the popup element
+ 
     const popup = document.getElementById('settingsPopup');
 
     // Set the top to '134%' when 'popup-close2' is clicked
     popup.style.top = '134%';
+    
 
     // Set the popup state to closed
     isPopupOpen = false;
