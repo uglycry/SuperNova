@@ -2,7 +2,7 @@
 .popup2 {
   transition: all 0.3s ease;
   position: fixed;
-  top: 134%;
+  top: 234%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #1a1a1aed;

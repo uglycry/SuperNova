@@ -9,7 +9,7 @@ document.addEventListener('keydown', function(event) {
 
     if (isPopupOpen) {
       // Close the popup by setting the top to '134%'
-      popup.style.top = '134%';
+      popup.style.top = '234%';
     } else {
       // Open the popup by setting the top to '50%'
       popup.style.top = '50%';
@@ -27,7 +27,7 @@ document.addEventListener('click', function(event) {
     const popup = document.getElementById('settingsPopup');
 
     // Set the top to '134%' when 'popup-close2' is clicked
-    popup.style.top = '134%';
+    popup.style.top = '234%';
     
 
     // Set the popup state to closed
