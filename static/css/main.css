@@ -146,7 +146,7 @@ body {
   padding: 12px;
   width: 503px;
   border-radius: 41px;
-  background: #ffffff08; /*dark mode: #ffffff08; light mode: #ffffffd4*/
+  background: #ffffffd4; /*dark mode: #ffffff08; light mode: #ffffffd4*/
   text-align: center;
   font-size: 24px;
   color: white; /*dark mode: white; light mode: #252525 */
