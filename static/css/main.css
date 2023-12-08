@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  background-image: url("/images/DP60WY.webp");
+  /*background-image: url("/images/DP60WY.webp");*/
   background-color: #111;
   font-family: "Montserrat", sans-serif;
   background-size: cover;
@@ -43,7 +43,7 @@ body {
   box-sizing: border-box;
   background-color: transparent;
   backdrop-filter: blur(20px);
-  /*box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);*/
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
   z-index: 100;
   backface-visibility: visible;
   transition: 0.35s ease;
@@ -146,10 +146,10 @@ body {
   padding: 12px;
   width: 503px;
   border-radius: 41px;
-  background: #ffffffd4;
+  background: #ffffff08; /*dark mode: #ffffff08; light mode: #ffffffd4*/
   text-align: center;
   font-size: 24px;
-  color: #252525;
+  color: white; /*dark mode: white; light mode: #252525 */
   border: 3px solid #63616124;
   transition: 0.2s;
 }
