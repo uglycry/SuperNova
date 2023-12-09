@@ -154,6 +154,28 @@ body {
   transition: 0.2s;
 }
 
+.big-settings {
+  background-color: #161616;
+  border-radius: 10px;
+  margin-top: -3px;
+  width: 1387px;
+  height: 555px;
+
+  padding: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 0.8000000000000007em;
+}
+
+.setting-slot-container {
+  background-color: #1d1d1d;
+  border-radius: 7px;
+  padding: 30px;
+  max-width: 446px;
+  max-height: 188px;
+}
+
 .searchbar:focus {
   outline: none;
   box-shadow: 0px 0px 10px 0px rgb(41 40 40);

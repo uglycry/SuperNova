@@ -53,6 +53,10 @@ app.use(express.static(path.join(__dirname, "static")));
     res.sendFile(path.join(__dirname, "routes", "algebra.html"));
   });
 
+  app.get("/settings", (req, res) => {
+    res.sendFile(path.join(__dirname, "routes", "settings.html"));
+  });
+
   app.get("/go", (req, res) => {
     res.sendFile(path.join(__dirname, "routes", "go.html"));
   });
