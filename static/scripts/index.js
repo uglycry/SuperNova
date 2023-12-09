@@ -25,7 +25,7 @@ form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const formValue = document.querySelector("form input").value;
     if (!isUrl(formValue)) {
-      const url = "https://search.brave.com/search?q=" + formValue;
+      const url = "https://www.google.com/search?q=" + formValue;
       sessionStorage.setItem("encodedUrl", encodeURIComponent(url));
       location.href = "/./go";  
     } else {
